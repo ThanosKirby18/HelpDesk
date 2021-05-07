@@ -6,10 +6,11 @@ public class Main
 {
   public static void main (String args[])
   {
+
       JFrame frame1 = new JFrame("Help Desk");
       frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       // //YOU MUST HAVE THIS LINE
-       frame1.setPreferredSize(new Dimension(500,500));
+      frame1.setPreferredSize(new Dimension(500,500));
       frame1.setVisible(true);
 
       JPanel panel1 = new JPanel(new GridLayout(4, 4, 100, 100));
@@ -17,11 +18,11 @@ public class Main
       panel1.setVisible(true);
 
 
-       JTextArea labelBold = new JTextArea("Sans Serif, Bold, 100, black");
+       JTextField labelBold = new JTextField("Sans Serif, Bold, 100, black");
        labelBold.setText("Help Desk");
        labelBold.setBounds(50, 0, 20, 20);
        labelBold.setFont(new Font("Sans Serif", Font.BOLD, 50));
-       labelBold.setBackground(new Color(64, 103, 162));
+        labelBold.setBackground(new Color(64, 103, 162));
        labelBold.setEditable(false);
        panel1.add(labelBold);
 /*
